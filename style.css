@@ -10,26 +10,64 @@ html {
 
 body {
     font-family: 'Tomorrow', sans-serif;
-    overflow: hidden;
+    
 }
 
-.hamburger {
-    position: fixed;
+#wrapper {
+    display: inline-block;
+    border-radius: 500px;
+    position: absolute;
+    padding: 50px; 
     cursor: pointer;
-    right: 1.5%;
-    top: 3%;
+    z-index: 5;
+    right: 2%;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    position: absolute;
     z-index: 5;
 }
 
-.menu .hamburger img {
-    height: 5vh;
+.line {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 5;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.top {
+    top: 18%;
+}
+
+.middle {
+    top: 48%;
+}
+
+.bottom {
+    top:78%;
+}
+
+.icon.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+}
+
+.icon.close .bottom, .icon.close .middle {
+    transform: rotate(-45deg);
+    top: 48%;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     margin-left: auto;
-    background-color: hsla(180, 50%, 50%, 0.5);
+    /* background-color: hsla(180, 50%, 50%, 0.5); */
     opacity: 1;
     z-index: 4;
     position: fixed;
@@ -194,7 +232,6 @@ section {
 
 .imgOp {
     height: 100vh;
-    
 }
 
 .ExiaE0, .SariaE0 {

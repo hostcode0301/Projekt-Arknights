@@ -16,9 +16,15 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle("open");
-})
+// hamburger.addEventListener('click', () => {
+//     navLinks.classList.toggle("open");
+// })
+const wrapper = document.querySelector("#wrapper");
+const icon = document.querySelector(".icon");
+
+wrapper.addEventListener('click', () => {
+    icon.classList.toggle("close");
+});
 
 const ExiaE2 = document.querySelector(".ExiaE2");
 
