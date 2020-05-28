@@ -20,7 +20,7 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle("open");
 })
 
-let ExiaE2 = document.querySelector(".ExiaE2");
+const ExiaE2 = document.querySelector(".ExiaE2");
 
 function Exia_Hide(x) {
     x.style.display = "none";
@@ -32,14 +32,14 @@ function Exia_Show(x) {
     ExiaE2.style.display = "none";
 }
 
-let SariaE2 = document.querySelector(".SariaE2");
+const SariaE2 = document.querySelector(".SariaE2");
 
-function Saria_Hide(y) {
-    y.style.display = "none";
+function Saria_Hide(x) {
+    x.style.display = "none";
     SariaE2.style.display = "block";
 }
 
-function Saria_Show(y) {
-    y.style.display = "block";
+function Saria_Show(x) {
+    x.style.display = "block";
     SariaE2.style.display = "none";
 }
