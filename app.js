@@ -26,26 +26,30 @@ wrapper.addEventListener('click', () => {
     icon.classList.toggle("close");
 });
 
+const imgExia = document.querySelector(".imgExia");
+const ExiaE0 = document.querySelector(".ExiaE0");
 const ExiaE2 = document.querySelector(".ExiaE2");
 
-function Exia_Hide(x) {
-    x.style.display = "none";
-    ExiaE2.style.display = "block";
-}
+ExiaE2.classList.toggle("hide");
+ExiaE0.classList.toggle("appear");
 
-function Exia_Show(x) {
-    x.style.display = "block";
-    ExiaE2.style.display = "none";
-}
+imgExia.addEventListener('mouseover', () => {
+    ExiaE0.classList.toggle("hide");
+    ExiaE2.classList.toggle("appear");
+    ExiaE0.classList.toggle("appear");
+    ExiaE2.classList.toggle("hide");
+});
 
+const imgSaria = document.querySelector(".imgSaria");
+const SariaE0 = document.querySelector(".SariaE0");
 const SariaE2 = document.querySelector(".SariaE2");
 
-function Saria_Hide(x) {
-    x.style.display = "none";
-    SariaE2.style.display = "block";
-}
+SariaE2.classList.toggle("hide");
+SariaE0.classList.toggle("appear");
 
-function Saria_Show(x) {
-    x.style.display = "block";
-    SariaE2.style.display = "none";
-}
+imgSaria.addEventListener('mouseover', () => {
+    SariaE0.classList.toggle("hide");
+    SariaE2.classList.toggle("appear");
+    SariaE0.classList.toggle("appear");
+    SariaE2.classList.toggle("hide");
+});

@@ -230,15 +230,22 @@ section {
     width: 100%;
 }
 
-.imgOp {
+.imgExia, .imgSaria {
     height: 100vh;
 }
 
 .ExiaE0, .SariaE0 {
-    padding-top: 10vh;
     height: 100vh;
-    display: block;
-    transition-timing-function: ease;
+    padding-top: 10vh;
+    transition: all ease 0.3s;
+}
+
+.ExiaE0.appear, .SariaE0.appear {
+    opacity: 1;
+}
+
+.ExiaE0.hide, .SariaE0.hide {
+    opacity: 0;
 }
 
 .imgExiaE0, .imgSariaE0 {
@@ -246,10 +253,19 @@ section {
 }
 
 .ExiaE2, .SariaE2 {
-    display: none;
     height: 100vh;
     padding-top: 10vh;
-    transition-timing-function: ease;
+    z-index: 1;
+    position: absolute;
+    transition: all ease-out 0.3s;
+}
+
+.ExiaE2.appear, .SariaE2.appear {
+    opacity: 1;
+}
+
+.ExiaE2.hide, .SariaE2.hide {
+    opacity: 0;
 }
 
 .imgExiaE2, .imgSariaE2 {
